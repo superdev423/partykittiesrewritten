@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Kitties Rewritten</title>
+    <!-- Ícone da aba do navegador -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        body {
+            background-color: #1e3a8a;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        
+        /* Logo no canto superior */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 60px;
+            height: auto;
+        }
+
+        /* Container do jogo para centralizar certinho */
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        iframe {
+            width: 640px;
+            height: 360px;
+            border: none;
+            display: block;
+        }
+
+        /* Texto da G Studio embaixo */
+        .footer-text {
+            color: #ffffff;
+            font-size: 14px;
+            margin-top: 10px;
+            opacity: 0.8;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo no canto superior esquerdo -->
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <div class="game-container">
+        <iframe src="game.html" allowfullscreen></iframe>
+        <div class="footer-text">G Studio, superdev423, 2026</div>
+    </div>
+
+</body>
+</html>
